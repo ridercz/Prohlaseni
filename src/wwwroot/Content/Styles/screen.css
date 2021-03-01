@@ -40,17 +40,19 @@ main {
     margin: 6em 0 0 66%;
     border-top: 1px dotted #000;
     text-align: center; }
-  main input {
+  main input, main textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
     background-color: #fff;
     color: #000;
     border: 2px solid #c00;
     padding: .25em;
-    width: 100%; }
-    main input::placeholder {
+    width: 100%;
+    overflow: visible;
+    resize: vertical; }
+    main input::placeholder, main textarea::placeholder {
       color: #c00; }
-    main input#datum {
+    main input#datum, main textarea#datum {
       max-width: 33%; }
 
 footer {

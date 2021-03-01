@@ -36,7 +36,7 @@ main {
         text-align: center;
     }
 
-    input {
+    input, textarea {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 100%;
         background-color: #fff;
@@ -44,6 +44,7 @@ main {
         border: 1px solid #999;
         padding: .25em;
         width: 100%;
+        resize: vertical;
 
         &::placeholder {
             color: transparent;
@@ -60,7 +61,7 @@ footer {
     font-size: .7em;
     text-align: left;
 
-    &::before{
+    &::before {
         content: "Vytvořeno pomocí webu prohlaseni.altair.blog | ";
     }
 }
