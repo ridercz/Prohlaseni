@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/Content/Styles/screen.css",
+    "inputFile": "wwwroot/Content/Styles/screen.scss"
+  },
+  {
+    "outputFile": "wwwroot/Content/Styles/print.css",
+    "inputFile": "wwwroot/Content/Styles/print.scss"
+  }
+]

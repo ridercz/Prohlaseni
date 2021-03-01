@@ -1,0 +1,73 @@
+﻿@page "{odstavec:int:range(2, 9)}"
+@{
+    var odstavec = int.Parse(this.RouteData.Values["odstavec"].ToString());
+}
+
+<h1>Čestné prohlášení</h1>
+
+<div class="info">
+    <p>Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Slouží i pro cestu zpět. Nepotřebujete žádné další dokumenty či doklady.</p>
+    <p>Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+</div>
+
+<p>
+    <label for="jmeno">Jméno a příjmení:</label><br />
+    <input type="text" id="jmeno" placeholder="Jan Novák" />
+</p>
+<p>
+    <label for="adresa">Adresa trvalého pobytu nebo bydliště:</label><br />
+    <input type="text" id="adresa" placeholder="Hlavní náměstí 1, Kocourkov" />
+</p>
+<p>
+    <label for="doklad">Číslo dokladu (občanský průkaz, pas):</label><br />
+    <input type="text" id="doklad" placeholder="OP AB123456" />
+</p>
+<p>
+    <label for="misto">Cestuji do následujícího místa:</label><br />
+    <input type="text" id="misto" placeholder="Hlavní ulice 37, Horní Dolní" />
+</p>
+
+<p>
+    Čestně prohlašuji, že se na tuto cestu vztahuje výjimka ve smyslu bodu II, odst. @odstavec usnesení vlády ČR ze dne 26. února 2021 č. 216, neboť se jedná o
+    @switch (odstavec) {
+        case 2:
+            <text>nezbytnou cestu za účelem zajištění nezbytných potřeb osob příbuzných a blízkých nebo potřeb pro jinou osobu (např. dobrovolnictví, sousedská výpomoc), zajištění péče o děti, zajištění péče o zvířata, odkládání odpadu</text>
+            break;
+        case 3:
+            <text>nezbytnou cestu do zdravotnických zařízení nebo za účelem využívání sociálních služeb, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých, a do zařízení veterinární péče</text>
+            break;
+        case 4:
+            <text>cestu za účelem vyřízení neodkladných úředních záležitostí, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých</text>
+            break;
+        case 5:
+            <text>výkon povolání nebo činností sloužících k zajištění bezpečnosti, vnitřního pořádku a řešení krizové situace, ochrany zdraví, poskytování zdravotní nebo sociální péče, včetně dobrovolnické činnosti, individuální duchovní péče a služby, veřejné hromadné dopravy a další infrastruktury, služeb pro obyvatele, včetně zásobování a rozvážkové služby, veterinární péče</text>
+            break;
+        case 6:
+            <text>účast na pohřbu</text>
+            break;
+        case 7:
+            <text>cestu za účelem účasti na vzdělávání včetně praxí a na zkouškách</text>
+            break;
+        case 8:
+            <text>účast na hromadné akci dovolené podle bodu IX usnesení</text>
+            break;
+        case 9:
+            <text>cestu za účelem voleb a zasedání orgánů právnických osob v obci jejich sídla za podmínek stanovených v bodu X usnesení</text>
+            break;
+        default:
+            break;
+    }
+    a o cestu zpět.
+</p>
+
+<p>
+    <label for="datum">Datum:</label><br />
+    <input type="text" id="datum" />
+</p>
+
+<p class="signature">podpis</p>
+
+<p class="buttons">
+    <a href="javascript:window.print()">Vytisknout</a>
+    <a asp-page="Index">Začít znovu</a>
+</p>

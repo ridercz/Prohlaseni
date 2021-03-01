@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\Content\Styles\screen.css" />
+    <None Include="wwwroot\Content\Styles\screen.min.css" />
+    <None Include="wwwroot\Content\Styles\screen.scss" />
+  </ItemGroup>
+
+</Project>

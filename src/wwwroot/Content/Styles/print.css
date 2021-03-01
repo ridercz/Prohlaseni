@@ -1,0 +1,51 @@
+﻿@charset "UTF-8";
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #000;
+  max-width: 18cm; }
+  html a {
+    color: #000;
+    text-decoration: none; }
+
+header {
+  display: none; }
+
+main h1 {
+  font-weight: normal;
+  margin-top: 0; }
+
+main h2 {
+  font-weight: normal; }
+
+main .info {
+  display: none; }
+
+main .signature {
+  margin: 6em 0 0 66%;
+  border-top: 1px dotted #000;
+  text-align: center; }
+
+main input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #999;
+  padding: .25em;
+  width: 100%; }
+  main input::placeholder {
+    color: transparent; }
+  main input#datum {
+    max-width: 33%; }
+
+footer {
+  padding: 3em 0 0 0;
+  font-size: .7em;
+  text-align: left; }
+  footer::before {
+    content: "Vytvořeno pomocí webu prohlaseni.altair.blog | "; }
+
+p.buttons {
+  display: none; }

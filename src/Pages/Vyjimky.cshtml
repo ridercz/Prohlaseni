@@ -1,0 +1,38 @@
+﻿@page
+
+<h1>Z jakého důvodu chcete cestovat mimo okres?</h1>
+
+<h2>Cestuji do práce</h2>
+<ul>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="5">Jsem hasič, policista, lékař, sociální pracovník, dobrovolník, duchovní nebo zajišťuji veřejnou dopravu a další infrastrukturu, poskytuji služby pro obyvatele (zásobování, rozvážková služba) apod.</a></li>
+    <li><a asp-page="Zamestnanec">Jsem běžný zaměstnanec</a></li>
+    <li><a asp-page="Podnikatel">Jsem podnikatel, živonostník, OSVČ...</a></li>
+</ul>
+
+<h2>Potřebuji něco zařídit</h2>
+
+<ul>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="2">Pomáhám příbuzným, blízkým, známým, sousedům...</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="2">Musím se postarat o děti</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="2">Musím se postarat o zvířata</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="3">Jdu k doktorovi, do nemocnice, do zařízení sociálních služeb nebo tam někoho doprovázím</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="3">Jdu k veterináři</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="4">Jdu na úřad, na policii, do banky a musím tam osobně nebo tam někoho doprovázím</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="5">Řeším krizovou situaci</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="7">Jdu do školy, na zkoušku nebo praxi</a></li>
+</ul>
+
+<h2>Zvláštní případy</h2>
+
+<ul>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="8">Jdu na zvláště povolenou akci (např. profesionální sportovec)</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="9">Jdu na zasedání nebo k volbám orgánů právnických osob</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="6">Jdu na pohřeb</a></li>
+    <li><a asp-page="Prohlaseni" asp-route-odstavec="2">Jdu vyhodit odpadky</a></li>
+    <li><a asp-page="Funkcionar">Jsem veřejný funkcionář nebo ústavní činitel a cestuji za účelem výkonu své povinnosti</a></li>
+    <li><a asp-page="Vycestovani">Chci vycestovat z České republiky</a></li>
+</ul>
+
+<p class="buttons">
+    <a asp-page="Index">Začít znovu</a>
+</p>

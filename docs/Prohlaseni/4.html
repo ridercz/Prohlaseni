@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <title>Generátor čestných prohlášení</title>
+    <link rel="stylesheet" media="screen" href="/Content/Styles/screen.min.css?v=V_2XQY7bfTz7oyn72zPPLyA8CDDYKAN7U0_C3aH7ZWQ" />
+    <link rel="stylesheet" media="print" href="/Content/Styles/print.min.css?v=oQs4HzUiJw6B4V4o6AiM4fK0EvGDA3apPBk77RbHY5o" />
+</head>
+<body>
+    <header>
+        <h1>Generátor čestných prohlášení</h1>
+        <div>pro účely opuštění okresu bydliště s ohledem na usnesení Vlády ČR ze dne 26. února 2021 č. 216</div>
+    </header>
+    <main>
+        
+<h1>Čestné prohlášení</h1>
+
+<div class="info">
+    <p>Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Slouží i pro cestu zpět. Nepotřebujete žádné další dokumenty či doklady.</p>
+    <p>Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+</div>
+
+<p>
+    <label for="jmeno">Jméno a příjmení:</label><br />
+    <input type="text" id="jmeno" placeholder="Jan Novák" />
+</p>
+<p>
+    <label for="adresa">Adresa trvalého pobytu nebo bydliště:</label><br />
+    <input type="text" id="adresa" placeholder="Hlavní náměstí 1, Kocourkov" />
+</p>
+<p>
+    <label for="doklad">Číslo dokladu (občanský průkaz, pas):</label><br />
+    <input type="text" id="doklad" placeholder="OP AB123456" />
+</p>
+<p>
+    <label for="misto">Cestuji do následujícího místa:</label><br />
+    <input type="text" id="misto" placeholder="Hlavní ulice 37, Horní Dolní" />
+</p>
+
+<p>
+    Čestně prohlašuji, že se na tuto cestu vztahuje výjimka ve smyslu bodu II, odst. 4 usnesení vlády ČR ze dne 26. února 2021 č. 216, neboť se jedná o
+cestu za účelem vyřízení neodkladných úředních záležitostí, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých    a o cestu zpět.
+</p>
+
+<p>
+    <label for="datum">Datum:</label><br />
+    <input type="text" id="datum" />
+</p>
+
+<p class="signature">podpis</p>
+
+<p class="buttons">
+    <a href="javascript:window.print()">Vytisknout</a>
+    <a href="/">Začít znovu</a>
+</p>
+    </main>
+    <footer>
+        &copy; <a href="https://www.rider.cz/">Michal A. Valášek</a>, 2021
+    </footer>
+    <script>
+        var dtb = document.getElementById("datum");
+        if (dtb) {
+            var d = new Date();
+            dtb.value = d.getDate() + ". " + (d.getMonth() + 1) + ". " + d.getFullYear();
+        }
+    </script>
+</body>
+</html>

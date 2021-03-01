@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <title>Generátor čestných prohlášení</title>
+    <link rel="stylesheet" media="screen" href="/Content/Styles/screen.min.css?v=V_2XQY7bfTz7oyn72zPPLyA8CDDYKAN7U0_C3aH7ZWQ" />
+    <link rel="stylesheet" media="print" href="/Content/Styles/print.min.css?v=oQs4HzUiJw6B4V4o6AiM4fK0EvGDA3apPBk77RbHY5o" />
+</head>
+<body>
+    <header>
+        <h1>Generátor čestných prohlášení</h1>
+        <div>pro účely opuštění okresu bydliště s ohledem na usnesení Vlády ČR ze dne 26. února 2021 č. 216</div>
+    </header>
+    <main>
+        
+<h1>Z jakého důvodu chcete cestovat mimo okres?</h1>
+
+<h2>Cestuji do práce</h2>
+<ul>
+    <li><a href="/Prohlaseni/5">Jsem hasič, policista, lékař, sociální pracovník, dobrovolník, duchovní nebo zajišťuji veřejnou dopravu a další infrastrukturu, poskytuji služby pro obyvatele (zásobování, rozvážková služba) apod.</a></li>
+    <li><a href="/Zamestnanec">Jsem běžný zaměstnanec</a></li>
+    <li><a href="/Podnikatel">Jsem podnikatel, živonostník, OSVČ...</a></li>
+</ul>
+
+<h2>Potřebuji něco zařídit</h2>
+
+<ul>
+    <li><a href="/Prohlaseni/2">Pomáhám příbuzným, blízkým, známým, sousedům...</a></li>
+    <li><a href="/Prohlaseni/2">Musím se postarat o děti</a></li>
+    <li><a href="/Prohlaseni/2">Musím se postarat o zvířata</a></li>
+    <li><a href="/Prohlaseni/3">Jdu k doktorovi, do nemocnice, do zařízení sociálních služeb nebo tam někoho doprovázím</a></li>
+    <li><a href="/Prohlaseni/3">Jdu k veterináři</a></li>
+    <li><a href="/Prohlaseni/4">Jdu na úřad, na policii, do banky a musím tam osobně nebo tam někoho doprovázím</a></li>
+    <li><a href="/Prohlaseni/5">Řeším krizovou situaci</a></li>
+    <li><a href="/Prohlaseni/7">Jdu do školy, na zkoušku nebo praxi</a></li>
+</ul>
+
+<h2>Zvláštní případy</h2>
+
+<ul>
+    <li><a href="/Prohlaseni/8">Jdu na zvláště povolenou akci (např. profesionální sportovec)</a></li>
+    <li><a href="/Prohlaseni/9">Jdu na zasedání nebo k volbám orgánů právnických osob</a></li>
+    <li><a href="/Prohlaseni/6">Jdu na pohřeb</a></li>
+    <li><a href="/Prohlaseni/2">Jdu vyhodit odpadky</a></li>
+    <li><a href="/Funkcionar">Jsem veřejný funkcionář nebo ústavní činitel a cestuji za účelem výkonu své povinnosti</a></li>
+    <li><a href="/Vycestovani">Chci vycestovat z České republiky</a></li>
+</ul>
+
+<p class="buttons">
+    <a href="/">Začít znovu</a>
+</p>
+    </main>
+    <footer>
+        &copy; <a href="https://www.rider.cz/">Michal A. Valášek</a>, 2021
+    </footer>
+    <script>
+        var dtb = document.getElementById("datum");
+        if (dtb) {
+            var d = new Date();
+            dtb.value = d.getDate() + ". " + (d.getMonth() + 1) + ". " + d.getFullYear();
+        }
+    </script>
+</body>
+</html>

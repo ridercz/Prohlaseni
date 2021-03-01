@@ -1,0 +1,36 @@
+﻿@page
+
+<h1>Čestné prohlášení</h1>
+
+<p class="noprint">Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Kromě tohoto dokumentu potřebujete ještě dokumenty související s vycestováním z ČR, např. letenku apod.</p>
+
+<p class="noprint">Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+
+<p>
+    <label for="jmeno">Jméno a příjmení:</label><br />
+    <input type="text" id="jmeno" placeholder="Jan Novák" />
+</p>
+<p>
+    <label for="adresa">Adresa trvalého pobytu nebo bydliště:</label><br />
+    <input type="text" id="adresa" placeholder="Hlavní náměstí 1, Kocourkov" />
+</p>
+<p>
+    <label for="doklad">Číslo dokladu (občanský průkaz, pas):</label><br />
+    <input type="text" id="doklad" placeholder="OP AB123456" />
+</p>
+<p>
+    <label for="misto">Cestuji do následujícího místa:</label><br />
+    <input type="text" id="misto" placeholder="Hlavní ulice 37, Horní Dolní" />
+</p>
+
+<p>Čestně prohlašuji, že se na tuto cestu vztahuje výjimka ve smyslu bodu II, odst. 11 usnesení vlády ČR ze dne 26. února 2021 č. 216, neboť se jedná o cestu za účelem vycestování z ČR.</p>
+
+<p>
+    <label for="datum">Datum:</label><br />
+    <input type="text" id="datum" value="@DateTime.Today.ToString("d. MMMM yyyy")" />
+</p>
+
+<p class="buttons">
+    <a href="javascript:window.print()">Vytisknout</a>
+    <a asp-page="Index">Začít znovu</a>
+</p>
