@@ -12,3 +12,6 @@ REN docs\* *.html
 REN docs\prohlaseni\* *.html
 RMDIR /Q /S docs\Content
 XCOPY /S src\wwwroot\Content docs\Content\
+
+REM -- Create CNAME
+ECHO prohlaseni.altair.blog > docs/CNAME
