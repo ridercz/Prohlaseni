@@ -1,9 +1,13 @@
 ﻿<!DOCTYPE html>
+@{
+    var canonicalUrl = "https://prohlaseni.altair.blog" + this.Context.Request.Path;
+}
 <html lang="cs-CZ">
 <head>
     <title>Generátor čestných prohlášení</title>
     <link rel="stylesheet" media="screen" href="~/Content/Styles/screen.min.css" asp-append-version="true" />
     <link rel="stylesheet" media="print" href="~/Content/Styles/print.min.css" asp-append-version="true" />
+    <link rel="canonical" href="@canonicalUrl" />
 </head>
 <body>
     <header>
