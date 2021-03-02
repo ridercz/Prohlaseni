@@ -9,6 +9,10 @@
         background-color: #fff;
         color: #000;
         margin: 2em auto;
+
+        @media (max-width: 1000px) {
+            margin: 0 auto;
+        }
     }
 
     a {
@@ -22,6 +26,10 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #000;
     color: #fff;
@@ -33,6 +41,11 @@ header {
         font-weight: normal;
         margin: 0;
         padding: 0;
+    }
+
+    #logo {
+        float: right;
+        height: 4em;
     }
 }
 

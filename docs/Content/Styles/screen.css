@@ -8,10 +8,16 @@
     background-color: #fff;
     color: #000;
     margin: 2em auto; }
+    @media (max-width: 1000px) {
+      html body {
+        margin: 0 auto; } }
   html a:link, html a:visited {
     color: #c00; }
   html a:hover, html a:active {
     color: #f00; }
+
+* {
+  box-sizing: border-box; }
 
 header {
   background-color: #000;
@@ -23,6 +29,9 @@ header {
     font-weight: normal;
     margin: 0;
     padding: 0; }
+  header #logo {
+    float: right;
+    height: 4em; }
 
 main {
   padding: 2em; }
