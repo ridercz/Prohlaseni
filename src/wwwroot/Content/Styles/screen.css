@@ -68,6 +68,8 @@ p.buttons {
     p.buttons a:link, p.buttons a:visited {
       background-color: #900;
       color: #fff; }
+      p.buttons a:link.secondary, p.buttons a:visited.secondary {
+        background-color: #300; }
     p.buttons a:hover, p.buttons a:active {
       background-color: #300;
       color: #ff0; }

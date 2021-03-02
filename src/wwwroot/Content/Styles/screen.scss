@@ -100,6 +100,10 @@ p.buttons {
         &:link, &:visited {
             background-color: #900;
             color: #fff;
+
+            &.secondary {
+                background-color: #300;
+            }
         }
 
         &:hover, &:active {
