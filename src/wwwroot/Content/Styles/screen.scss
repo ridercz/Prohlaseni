@@ -90,7 +90,8 @@ main {
         }
 
         &#datum {
-            max-width: 33%;
+            width: 33%;
+            min-width: 10em;
         }
     }
 }

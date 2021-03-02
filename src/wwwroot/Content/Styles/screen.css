@@ -60,7 +60,8 @@ main {
     main input::placeholder, main textarea::placeholder {
       color: #c00; }
     main input#datum, main textarea#datum {
-      max-width: 33%; }
+      width: 33%;
+      min-width: 10em; }
 
 footer {
   padding: 1em;
