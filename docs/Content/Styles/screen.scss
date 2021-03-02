@@ -105,7 +105,9 @@ p.buttons {
     margin-top: 3em;
 
     a {
+        display: inline-block;
         padding: .5em 2em;
+        margin: .5ex;
         text-decoration: none;
 
         &:link, &:visited {

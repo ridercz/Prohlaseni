@@ -70,7 +70,9 @@ footer {
 p.buttons {
   margin-top: 3em; }
   p.buttons a {
+    display: inline-block;
     padding: .5em 2em;
+    margin: .5ex;
     text-decoration: none; }
     p.buttons a:link, p.buttons a:visited {
       background-color: #900;
