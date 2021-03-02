@@ -2,9 +2,10 @@
 
 <h1>Čestné prohlášení</h1>
 
-<p class="noprint">Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Kromě tohoto dokumentu potřebujete ještě dokumenty související s vycestováním z ČR, např. letenku apod.</p>
-
-<p class="noprint">Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+<div class="info">
+    <p>Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Kromě tohoto dokumentu potřebujete ještě dokumenty související s vycestováním z ČR, např. letenku apod.</p>
+    <p>Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+</div>
 
 <p>
     <label for="jmeno">Jméno a příjmení:</label><br />
@@ -29,6 +30,8 @@
     <label for="datum">Datum:</label><br />
     <input type="text" id="datum" value="@DateTime.Today.ToString("d. MMMM yyyy")" />
 </p>
+
+<p class="signature">podpis</p>
 
 <p class="buttons">
     <a href="javascript:window.print()">Vytisknout</a>
