@@ -1,4 +1,4 @@
-﻿@page "{odstavec:int:range(2, 9)}"
+﻿@page "{odstavec:int:range(2, 11)}"
 @{
     var odstavec = int.Parse(this.RouteData.Values["odstavec"].ToString());
 }
@@ -8,6 +8,7 @@
 <div class="info">
     <p>Vyplňte červeně označená pole a poté klepněte na tlačítko <i>Vytisknout</i> niže. Vytištěný dokument podepište a vezměte ho na cestu s sebou. Slouží i pro cestu zpět. Nepotřebujete žádné další dokumenty či doklady.</p>
     <p>Vyplněné údaje se nikam neodesílají, nejsou nikde zaznamenávány ani ukládány, vše probíhá čistě ve vašem prohlížeči.</p>
+    <p>Pokud nevyplníte žádné údaje, vytiskne se formulář s prázdnými poli pro ruční vyplnění.</p>
 </div>
 
 <p>
@@ -28,36 +29,41 @@
 </p>
 
 <p>
-    Čestně prohlašuji, že se na tuto cestu vztahuje výjimka ve smyslu bodu II, odst. @odstavec usnesení vlády ČR ze dne 26. února 2021 č. 216, neboť se jedná o
+    Čestně prohlašuji, že se na tuto cestu vztahuje výjimka ve smyslu bodu II, odst. @odstavec usnesení vlády ČR ze dne 18. března 2021 č. 299, neboť se jedná o
     @switch (odstavec) {
         case 2:
-            <text>nezbytnou cestu za účelem zajištění nezbytných potřeb osob příbuzných a blízkých nebo potřeb pro jinou osobu (např. dobrovolnictví, sousedská výpomoc), zajištění péče o děti, zajištění péče o zvířata, odkládání odpadu</text>
+            <text>nezbytnou cestu za účelem zajištění nezbytných potřeb osob příbuzných a blízkých nebo potřeb pro jinou osobu (např. dobrovolnictví, sousedská výpomoc), zajištění péče o děti, zajištění péče o zvířata, odkládání odpadua o cestu zpět.</text>
             break;
         case 3:
-            <text>nezbytnou cestu do zdravotnických zařízení nebo za účelem využívání sociálních služeb, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých, a do zařízení veterinární péče</text>
+            <text>nezbytnou cestu do zdravotnických zařízení nebo za účelem využívání sociálních služeb, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých, a do zařízení veterinární péčea o cestu zpět.</text>
             break;
         case 4:
-            <text>cestu za účelem vyřízení neodkladných úředních záležitostí, včetně zajištění nezbytného doprovodu příbuzných a osob blízkých</text>
+            <text>cestu za účelem vyřízení neodkladných úředních záležitostí, včetně zajištění nezbytného doprovodu příbuzných a osob blízkýcha o cestu zpět.</text>
             break;
         case 5:
-            <text>výkon povolání nebo činností sloužících k zajištění bezpečnosti, vnitřního pořádku a řešení krizové situace, ochrany zdraví, poskytování zdravotní nebo sociální péče, včetně dobrovolnické činnosti, individuální duchovní péče a služby, veřejné hromadné dopravy a další infrastruktury, služeb pro obyvatele, včetně zásobování a rozvážkové služby, veterinární péče</text>
+            <text>výkon povolání nebo činností sloužících k zajištění bezpečnosti, vnitřního pořádku a řešení krizové situace, ochrany zdraví, poskytování zdravotní nebo sociální péče, včetně dobrovolnické činnosti, individuální duchovní péče a služby, veřejné hromadné dopravy a další infrastruktury, služeb pro obyvatele, včetně zásobování a rozvážkové služby, veterinární péčea o cestu zpět.</text>
             break;
         case 6:
-            <text>účast na pohřbu</text>
+            <text>účast na pohřbua o cestu zpět.</text>
             break;
         case 7:
-            <text>cestu za účelem účasti na vzdělávání včetně praxí a na zkouškách</text>
+            <text>cestu za účelem účasti na vzdělávání včetně praxí a na zkouškácha o cestu zpět.</text>
             break;
         case 8:
-            <text>účast na hromadné akci dovolené podle bodu IX usnesení</text>
+            <text>účast na hromadné akci dovolené podle bodu IX usnesenía o cestu zpět.</text>
             break;
         case 9:
-            <text>cestu za účelem voleb a zasedání orgánů právnických osob v obci jejich sídla za podmínek stanovených v bodu X usnesení</text>
+            <text>cestu za účelem voleb a zasedání orgánů právnických osob v obci jejich sídla za podmínek stanovených v bodu X usnesenía o cestu zpět.</text>
+            break;
+        case 10:
+            <text>za účelem návštěvy dítěte v náhradní rodinné péči nebo ústavní nebo ochranné výchově osobou blízkou a o cestu zpět.</text>
+            break;
+        case 11:
+            <text>cestu zpět do místa trvalého pobytu nebo bydliště.</text>
             break;
         default:
             break;
     }
-    a o cestu zpět.
 </p>
 
 <p>
